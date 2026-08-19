@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Profil</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Poppins', 'sans-serif'] },
+                    colors: {
+                        primary: '#7c3aed',
+                        secondary: '#f97316',
+                        darkbg: '#120828',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-stone-50 text-stone-800 dark:bg-darkbg dark:text-stone-200 transition-colors duration-300">
+
+    <!-- Loader -->
+    <div id="loader" class="fixed inset-0 z-[100] bg-stone-50 dark:bg-darkbg flex items-center justify-center gap-3">
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+    </div>
+
+    <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Konten Utama -->
+    <main class="pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Profile Card -->
+            <section class="mb-20" data-aos="fade-up">
+                <div class="glass feature-card p-8 lg:p-12 flex flex-col lg:flex-row gap-12 items-center">
+                    <div class="w-48 h-48 lg:w-64 lg:h-64 flex-shrink-0">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBGXTgWpDkmZsRr66Lrcf7QgHzZyNs6frzbMSIcTTGGq0tl8BETtE0-2Mk_XCxeBDD7yr5X-J3HPvbj-mRUiI972sQZ4vHdcUGRG1hFNKCybyCnezZcFYHa1YL744hjNJ7nfBmDPTvTXr_rW_AAukvlSfKuH9UpTMWdL_H5PbabnnD-jFeZ3G7rM-1sSCM/s1280/WhatsApp%20Image%202026-05-24%20at%2012.43.51%20AM.jpeg" alt="Profil" class="w-full h-full object-cover rounded-full border-8 border-primary/20 shadow-xl">
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-3xl lg:text-4xl font-bold mb-2">Babat Pangestu</h2>
+                        <p class="text-xl text-primary font-medium mb-6">253153743852 • Pendidikan Teknik Informatika</p>
+                        <p class="text-stone-600 dark:text-stone-400 leading-relaxed mb-6 text-justify">
+                            Halo, saya Babat Pangestu dengan NIM 253153743852 dari LPTK Universitas Negeri Malang. Saat ini saya merupakan mahasiswa PPG Calon Guru Tahun 2026 yang sedang mempersiapkan diri menjadi pendidik profesional, inovatif, dan adaptif terhadap perkembangan teknologi pendidikan.
+                            Melalui program Pendidikan Profesi Guru (PPG), saya terus mengembangkan kompetensi pedagogik, profesional, sosial, dan kepribadian untuk menciptakan proses pembelajaran yang kreatif, interaktif, dan bermakna bagi peserta didik. Saya memiliki minat dalam pengembangan media pembelajaran digital, teknologi pendidikan, serta pembelajaran berbasis Computational Thinking untuk mendukung pendidikan abad ke-21.
+                        </p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-2 bg-stone-100 dark:bg-stone-800 rounded-full text-sm font-medium border border-stone-200 dark:border-stone-700"><i class="fas fa-university text-secondary mr-2"></i>Universitas Negeri Malang</span>
+                            <span class="px-4 py-2 bg-stone-100 dark:bg-stone-800 rounded-full text-sm font-medium border border-stone-200 dark:border-stone-700"><i class="fas fa-map-marker-alt text-secondary mr-2"></i>Malang, Jawa Timur</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Daerah Asal -->
+            <section class="mb-20" data-aos="fade-up">
+                <div class="glass feature-card p-8 lg:p-12 flex flex-col lg:flex-row gap-12 items-center">
+                    <div class="flex-grow">
+                        <h2 class="text-3xl lg:text-4xl font-bold mb-2">Daerah Asal</h2>
+                        <p class="text-xl text-primary font-medium mb-6">Tulungagung</p>
+                        <p class="text-stone-600 dark:text-stone-400 leading-relaxed mb-6 text-justify">
+                            Saya berasal dari Kecamatan Bandung, Kabupaten Tulungagung, Jawa Timur. Daerah saya memiliki suasana yang masih asri dengan lingkungan yang nyaman, masyarakat yang ramah, serta budaya gotong royong yang masih sangat terjaga. Kehidupan masyarakat yang penuh kebersamaan membuat lingkungan di daerah saya terasa hangat dan harmonis.
+                            Kabupaten Tulungagung dikenal memiliki banyak potensi budaya, wisata alam, dan kerajinan khas yang menjadi identitas daerah. Salah satu ciri khas Tulungagung yang terkenal adalah kerajinan marmernya yang telah dikenal hingga berbagai daerah di Indonesia. Selain itu, Tulungagung juga memiliki banyak destinasi wisata alam seperti pantai selatan yang indah, perbukitan, dan berbagai kuliner khas yang menjadi daya tarik tersendiri.
+                        </p>
+                        <p class="text-stone-600 dark:text-stone-400 leading-relaxed mb-6 text-justify">
+                            Hal unik dari daerah saya adalah masyarakatnya yang masih menjunjung tinggi nilai kekeluargaan dan tradisi lokal dalam kehidupan sehari-hari. Kegiatan kerja bakti, gotong royong, dan kebersamaan antarwarga masih sering dilakukan sehingga menciptakan hubungan sosial yang erat. Lingkungan tersebut memberikan banyak pelajaran berharga bagi saya tentang pentingnya kerja sama, kepedulian sosial, dan rasa tanggung jawab terhadap sesama.
+                            Tumbuh di lingkungan yang sederhana namun penuh nilai kebersamaan menjadi motivasi bagi saya untuk terus berkembang, belajar, dan memberikan kontribusi positif dalam dunia pendidikan sebagai calon guru profesional yang mampu membawa perubahan baik bagi generasi masa depan.
+                        </p>
+                        <div class="flex flex-wrap gap-4"></div>
+                    </div>
+
+                    <!-- Google Maps -->
+                    <div class="w-full lg:w-96 flex-shrink-0">
+                        <h3 class="text-lg font-semibold text-center mb-3">Lokasi Daerah Asal</h3>
+                        <iframe
+                            src="https://www.google.com/maps?q=KabupatenTulungagung,Jawa%20Timur&output=embed"
+                            width="100%" height="300" style="border:0;"
+                            allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="rounded-2xl shadow-xl">
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Inspirasi & Tujuan -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+                <section class="glass feature-card p-8 hover:-translate-y-1 transition-transform" data-aos="fade-up">
+                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary text-xl mb-6">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Inspirasi Menjadi Guru</h3>
+                    <p class="text-stone-600 dark:text-stone-400 leading-relaxed mb-6 text-justify">
+                        Inspirasi saya menjadi seorang guru berasal dari keinginan untuk memberikan manfaat bagi orang lain melalui pendidikan. Saya percaya bahwa guru bukan hanya mengajarkan materi pelajaran, tetapi juga menjadi sosok yang mampu membimbing, memotivasi, dan membentuk karakter generasi masa depan. Pendidikan memiliki peran penting dalam menciptakan perubahan yang lebih baik, dan saya ingin menjadi bagian dari proses tersebut.
+                        Selain itu, perkembangan teknologi dan dunia pendidikan yang semakin maju membuat saya tertarik untuk menjadi guru yang kreatif, inovatif, dan mampu menciptakan pembelajaran yang menyenangkan bagi peserta didik. Saya ingin membantu siswa agar tidak hanya memahami materi, tetapi juga mampu berpikir kritis, kreatif, dan percaya diri dalam menghadapi tantangan di masa depan.
+                    </p>
+                    <p class="text-stone-600 dark:text-stone-400 leading-relaxed mb-6 text-justify">
+                        Lingkungan tempat saya tumbuh yang penuh dengan nilai kebersamaan dan kepedulian juga menjadi motivasi bagi saya untuk memilih dunia pendidikan. Saya berharap dapat menjadi guru profesional yang tidak hanya mengajar, tetapi juga mampu memberikan inspirasi, semangat belajar, dan dampak positif bagi peserta didik serta lingkungan sekitar.
+                    </p>
+                </section>
+                
+                <section class="glass feature-card p-8 hover:-translate-y-1 transition-transform" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center text-secondary text-xl mb-6">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Tujuan Profesional</h3>
+                    <p class="text-stone-600 dark:text-stone-400 leading-relaxed mb-6 text-justify">
+                        Saya, Babat Pangestu, memiliki tujuan profesional untuk menjadi seorang pendidik Informatika yang tidak hanya mampu mentransfer pengetahuan teknologi, tetapi juga mampu membentuk generasi muda yang berpikir kritis, kreatif, dan adaptif menghadapi tantangan era digital.
+                        Sebagai calon guru Informatika di jenjang SMP, saya berkomitmen untuk merancang dan melaksanakan pembelajaran yang bermakna, kontekstual, dan berpusat pada peserta didik melalui pendekatan Student Centered Learning dan model pembelajaran inovatif seperti Project Based Learning. Saya meyakini bahwa teknologi bukan sekadar alat, melainkan wahana bagi peserta didik untuk memecahkan masalah nyata dalam kehidupan sehari-hari.
+                    </p>
+                    <p class="text-stone-600 dark:text-stone-400 leading-relaxed mb-6 text-justify">
+                        Secara jangka pendek, saya bertujuan untuk menguasai kompetensi pedagogik dan profesional secara terpadu melalui program PPG, sehingga mampu mengelola pembelajaran Informatika yang terencana, terstruktur, dan bermutu sesuai dengan kurikulum yang berlaku. Secara jangka panjang, saya bercita-cita menjadi guru yang terus bertumbuh melalui refleksi, kolaborasi dengan sesama pendidik, serta pengembangan diri yang berkelanjutan, demi memberikan pengalaman belajar terbaik bagi setiap peserta didik yang saya dampingi.
+                        Saya percaya bahwa guru yang baik bukan hanya yang menguasai ilmunya, tetapi juga yang mampu menyalakan semangat belajar dalam diri setiap anak — karena di situlah perubahan sejati dimulai.
+                    </p>
+                </section>
+            </div>
+
+            <!-- Kutipan -->
+            <section data-aos="fade-up">
+                <h3 class="text-3xl font-bold mb-10 text-center">Kutipan Inspiratif</h3>
+                <div class="max-w-4xl mx-auto">
+                    <div class="glass feature-card p-10 text-center">
+                        <i class="fas fa-quote-left text-5xl text-primary/30 mb-6"></i>
+                        <blockquote class="text-xl md:text-2xl italic leading-relaxed text-stone-700 dark:text-stone-300 mb-6">
+                            "Di dunia yang berubah sangat cepat, kemampuan terpenting bukanlah menghafal informasi, melainkan kemampuan untuk terus belajar, beradaptasi, dan menciptakan makna."
+                        </blockquote>
+                        <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mb-4"></div>
+                        <p class="text-primary font-semibold text-lg">— Yuval Noah Harari</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Back to Top -->
+    <button id="backToTop"><i class="fas fa-arrow-up text-sm"></i></button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,347 @@
+<nav id="floating-nav">
+
+    <div class="nav-inner">
+
+        <!-- =========================================
+             LOGO
+        ========================================== -->
+
+        <a
+            href="index.html"
+            class="flex-shrink-0 flex items-center gap-2.5 font-bold text-xl text-primary"
+        >
+
+            <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgn1LkAfwgvtM8mytTyzerhmlsk-1a3ht9HX3onfZlIimD0lDrM7nWKR2inzTODm4KS1IJCGRw4sJa5IwWSxdHibCpvNPThdkckzapepyA6LmkxknE3cuNQVbfNCnAqD1pKzEZVXVpLhyl-1_YRC4utvxNYEUHFDYxp8Ntw5Mkd5nlxo8NpgGVNpv2xB0M5/s768/logo%20um.png"
+                alt="Logo UM"
+                class="h-9 w-auto object-contain mix-blend-multiply"
+            >
+
+            <span>Portofolio</span>
+
+        </a>
+
+
+        <!-- =========================================
+             DESKTOP NAVIGATION
+        ========================================== -->
+
+        <div class="hidden md:flex items-center gap-1">
+
+
+            <!-- BERANDA -->
+
+            <a
+                href="index.html"
+                class="nav-link"
+                data-nav="index"
+            >
+                Beranda
+            </a>
+
+
+            <!-- PROFIL -->
+
+            <a
+                href="profil.html"
+                class="nav-link"
+                data-nav="profil"
+            >
+                Profil
+            </a>
+
+
+            <!-- PPL -->
+
+            <a
+                href="ppl.html"
+                class="nav-link"
+                data-nav="ppl"
+            >
+                PPL
+            </a>
+
+
+            <!-- =========================================
+                 ARTEFAK + DROPDOWN
+            ========================================== -->
+
+            <div class="nav-dropdown">
+
+
+                <!--
+                    ARTEFAK ADALAH SATU MENU
+
+                    Klik → artefak.html
+                    Hover → dropdown muncul
+                -->
+
+                <a
+                    href="artefak.html"
+                    class="nav-link nav-dropdown-toggle"
+                    data-nav="artefak"
+                >
+
+                    <span>Artefak</span>
+
+                    <i class="fas fa-chevron-down"></i>
+
+                </a>
+
+
+                <!-- =====================================
+                     DROPDOWN
+                ====================================== -->
+
+                <div class="nav-dropdown-menu">
+
+
+                    <!-- SEMESTER 1 -->
+
+                    <a
+                        href="semester1.html"
+                        class="nav-dropdown-item"
+                    >
+
+                        <span class="item-number">
+                            01
+                        </span>
+
+
+                        <span class="item-text">
+
+                            <strong>
+                                Semester 1
+                            </strong>
+
+                            <small>
+                                Artefak Semester 1
+                            </small>
+
+                        </span>
+
+                    </a>
+
+
+                    <!-- SEMESTER 2 -->
+
+                    <a
+                        href="fp.html"
+                        class="nav-dropdown-item"
+                    >
+
+                        <span class="item-number">
+                            02
+                        </span>
+
+
+                        <span class="item-text">
+
+                            <strong>
+                                Semester 2
+                            </strong>
+
+                            <small>
+                                Artefak Semester 2
+                            </small>
+
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================================
+                 REFLEKSI
+            ========================================== -->
+
+            <a
+                href="refleksi.html"
+                class="nav-link"
+                data-nav="refleksi"
+            >
+                Refleksi
+            </a>
+
+
+            <!-- =========================================
+                 KONTAK
+            ========================================== -->
+
+            <a
+                href="#kontak"
+                class="nav-link"
+            >
+                Kontak
+            </a>
+
+
+            <!-- =========================================
+                 DARK MODE DESKTOP
+            ========================================== -->
+
+            <button
+                id="theme-toggle"
+                type="button"
+                class="ml-2 p-2 rounded-full bg-violet-100 dark:bg-violet-900/40 hover:bg-violet-200 dark:hover:bg-violet-800/60 transition"
+            >
+
+                <i
+                    id="theme-icon"
+                    class="fas fa-moon text-violet-600 dark:text-violet-300 text-sm"
+                ></i>
+
+            </button>
+
+
+        </div>
+
+
+        <!-- =========================================
+             MOBILE
+        ========================================== -->
+
+        <div class="md:hidden flex items-center gap-3">
+
+
+            <!-- DARK MODE MOBILE -->
+
+            <button
+                id="theme-toggle-mobile"
+                type="button"
+                class="p-2 rounded-full bg-violet-100 dark:bg-violet-900/40"
+            >
+
+                <i
+                    id="theme-icon-mobile"
+                    class="fas fa-moon text-violet-600 dark:text-violet-300 text-sm"
+                ></i>
+
+            </button>
+
+
+            <!-- MOBILE MENU BUTTON -->
+
+            <button
+                id="mobile-menu-btn"
+                type="button"
+                class="text-xl text-stone-600 dark:text-stone-300"
+            >
+
+                <i class="fas fa-bars"></i>
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- =====================================================
+     MOBILE MENU
+====================================================== -->
+
+<div id="mobile-menu-floating">
+
+    <div class="flex flex-col gap-2 font-medium">
+
+
+        <!-- BERANDA -->
+
+        <a
+            href="index.html"
+            class="nav-link"
+            data-nav="index"
+        >
+            Beranda
+        </a>
+
+
+        <!-- PROFIL -->
+
+        <a
+            href="profil.html"
+            class="nav-link"
+            data-nav="profil"
+        >
+            Profil
+        </a>
+
+
+        <!-- PPL -->
+
+        <a
+            href="ppl.html"
+            class="nav-link"
+            data-nav="ppl"
+        >
+            PPL
+        </a>
+
+
+        <!-- =========================================
+             ARTEFAK MOBILE
+        ========================================== -->
+
+        <div class="mobile-artifact-menu">
+
+
+            <!-- Klik → artefak.html -->
+
+            <a
+                href="artefak.html"
+                class="nav-link mobile-artifact-link"
+                data-nav="artefak"
+            >
+                Artefak
+            </a>
+
+
+            <!-- Submenu -->
+
+            <div class="mobile-artifact-submenu">
+
+                <a href="semester1.html">
+                    Semester 1
+                </a>
+
+                <a href="fp.html">
+                    Semester 2
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- REFLEKSI -->
+
+        <a
+            href="refleksi.html"
+            class="nav-link"
+            data-nav="refleksi"
+        >
+            Refleksi
+        </a>
+
+
+        <!-- KONTAK -->
+
+        <a
+            href="#kontak"
+            class="nav-link"
+        >
+            Kontak
+        </a>
+
+
+    </div>
+
+</div>

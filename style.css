@@ -1,0 +1,822 @@
+/* ── Glassmorphism ───────────────────────────────────────── */
+.glass {
+    background: rgba(245, 240, 255, 0.55);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+.dark .glass {
+    background: rgba(30, 10, 60, 0.60);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+/* ── Dot Grid Background ─────────────────────────────────── */
+.dot-grid {
+    background-image: radial-gradient(circle, rgba(124,58,237,0.12) 1.5px, transparent 1.5px);
+    background-size: 28px 28px;
+}
+.dark .dot-grid {
+    background-image: radial-gradient(circle, rgba(124,58,237,0.18) 1.5px, transparent 1.5px);
+    background-size: 28px 28px;
+}
+
+/* ── Floating Navbar ─────────────────────────────────────── */
+#floating-nav {
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 2rem);
+    max-width: 72rem;
+    z-index: 50;
+    border-radius: 9999px;
+    border: 1px solid rgba(124, 58, 237, 0.2);
+    background: rgba(250, 247, 255, 0.82);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    box-shadow: 0 8px 32px rgba(124, 58, 237, 0.10), 0 1px 0 rgba(255,255,255,0.6) inset;
+    padding: 0 1.5rem;
+    transition: all 0.3s ease;
+}
+.dark #floating-nav {
+    background: rgba(20, 6, 46, 0.82);
+    border-color: rgba(124, 58, 237, 0.35);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+#floating-nav .nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+#mobile-menu-floating {
+    position: fixed;
+    top: 5.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 2rem);
+    max-width: 72rem;
+    z-index: 49;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(124, 58, 237, 0.2);
+    background: rgba(250, 247, 255, 0.92);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    box-shadow: 0 8px 24px rgba(124,58,237,0.12);
+    padding: 1rem 1.5rem 1.25rem;
+    display: none;
+}
+.dark #mobile-menu-floating {
+    background: rgba(20, 6, 46, 0.92);
+    border-color: rgba(124, 58, 237, 0.35);
+}
+#mobile-menu-floating.open { display: block; }
+
+/* ── Nav Link Pills ──────────────────────────────────────── */
+.nav-link {
+    padding: 0.35rem 0.85rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+}
+.nav-link:hover, .nav-link.active {
+    background: rgba(124, 58, 237, 0.1);
+    color: #7c3aed;
+}
+.dark .nav-link:hover, .dark .nav-link.active {
+    background: rgba(124, 58, 237, 0.2);
+}
+
+/* ── Section Diagonal Divider ────────────────────────────── */
+.skew-section {
+    clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0 100%);
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    margin-top: -1.5rem;
+    margin-bottom: -1.5rem;
+}
+
+/* ── Cards ───────────────────────────────────────────────── */
+.feature-card {
+    border-radius: 1.5rem;
+    border: 1px solid rgba(124, 58, 237, 0.12);
+    border-top: 3px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    overflow: hidden;
+}
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #7c3aed, #f97316);
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 48px rgba(124, 58, 237, 0.14);
+}
+.dark .feature-card {
+    border-color: rgba(124, 58, 237, 0.25);
+}
+
+/* ── Loader — 3 Bouncing Dots ────────────────────────────── */
+.loader-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 9999px;
+    background: #7c3aed;
+    animation: bounce-dot 1.2s ease-in-out infinite;
+}
+.loader-dot:nth-child(2) { animation-delay: 0.2s; background: #a855f7; }
+.loader-dot:nth-child(3) { animation-delay: 0.4s; background: #f97316; }
+@keyframes bounce-dot {
+    0%, 80%, 100% { transform: translateY(0); opacity: 0.6; }
+    40%           { transform: translateY(-18px); opacity: 1; }
+}
+
+/* ── Back-to-Top ─────────────────────────────────────────── */
+#backToTop {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    background: linear-gradient(135deg, #7c3aed, #f97316);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 0 rgba(124,58,237,0.35);
+    transition: all 0.3s;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(1rem);
+    z-index: 50;
+    border: none;
+    cursor: pointer;
+}
+#backToTop:hover {
+    transform: translateY(-2px);
+    box-shadow: 6px 6px 0 rgba(124,58,237,0.45);
+}
+#backToTop.visible {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+}
+
+/* ── Body Transition ─────────────────────────────────────── */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ── Gallery ─────────────────────────────────────────────── */
+.gallery-card {
+    min-width: 320px;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 1.25rem;
+    flex-shrink: 0;
+}
+.gallery-card img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+.gallery-card:hover img { transform: scale(1.08); }
+
+.slide-track {
+    width: max-content;
+    animation: scrollGallery 100s linear infinite;
+}
+.slider:hover .slide-track { animation-play-state: paused; }
+@keyframes scrollGallery {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
+
+/* =========================================
+   ARTEFAK DROPDOWN
+========================================= */
+
+.nav-dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Tombol Artefak */
+.nav-dropdown-btn {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    font-family: inherit;
+}
+
+
+/* Panah */
+.nav-dropdown-btn i {
+    font-size: 9px;
+    transition: transform 0.25s ease;
+}
+
+
+/* Ketika terbuka */
+.nav-dropdown.open .nav-dropdown-btn i {
+    transform: rotate(180deg);
+}
+
+
+/* =========================================
+   MENU
+========================================= */
+
+.nav-dropdown-menu {
+    position: absolute;
+
+    top: calc(100% + 8px);
+    left: 50%;
+
+    width: 215px;
+
+    padding: 7px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 13px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.12);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateX(-50%) translateY(-8px);
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease,
+        visibility 0.2s ease;
+
+    z-index: 99999;
+}
+
+
+/* OPEN */
+.nav-dropdown.open .nav-dropdown-menu {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateX(-50%) translateY(0);
+
+    pointer-events: auto;
+}
+
+
+/* =========================================
+   ITEM
+========================================= */
+
+.nav-dropdown-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    padding: 9px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    transition: background 0.2s ease;
+}
+
+
+.nav-dropdown-item:hover {
+    background: #f5f3ff;
+}
+
+
+/* Nomor */
+.item-number {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: #ede9fe;
+
+    color: #7c3aed;
+
+    border-radius: 8px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+
+/* Text */
+.item-text {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1px;
+}
+
+
+.item-text strong {
+    font-size: 12px;
+
+    font-weight: 600;
+
+    color: #1e293b;
+}
+
+
+.item-text small {
+    font-size: 9px;
+
+    color: #94a3b8;
+}
+
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+.dark .nav-dropdown-menu {
+    background: #1e1b2e;
+
+    border-color: rgba(255,255,255,0.08);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.4);
+}
+
+
+.dark .nav-dropdown-item:hover {
+    background: rgba(124,58,237,0.15);
+}
+
+
+.dark .item-text strong {
+    color: #f8fafc;
+}
+
+
+.dark .item-text small {
+    color: #94a3b8;
+}
+/* =========================================================
+   ARTEFAK DROPDOWN
+========================================================= */
+
+
+/* Container Artefak */
+
+.nav-dropdown {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   ARTEFAK = SATU MENU
+========================================================= */
+
+.nav-dropdown-toggle {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    white-space: nowrap;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+}
+
+
+/* Panah */
+
+.nav-dropdown-toggle i {
+
+    font-size: 9px;
+
+    line-height: 1;
+
+    transition:
+        transform 0.25s ease;
+
+}
+
+
+/* Panah berputar */
+
+.nav-dropdown:hover
+.nav-dropdown-toggle i {
+
+    transform: rotate(180deg);
+
+}
+
+
+/* =========================================================
+   DROPDOWN MENU
+========================================================= */
+
+.nav-dropdown-menu {
+
+    position: absolute;
+
+    top: calc(100% + 8px);
+
+    left: 50%;
+
+    width: 220px;
+
+    padding: 8px;
+
+
+    background: rgba(255, 255, 255, 0.98);
+
+
+    border:
+        1px solid rgba(226, 232, 240, 0.9);
+
+
+    border-radius: 13px;
+
+
+    box-shadow:
+
+        0 15px 35px rgba(15, 23, 42, 0.12),
+
+        0 5px 12px rgba(15, 23, 42, 0.06);
+
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+
+    transform:
+        translateX(-50%)
+        translateY(-8px);
+
+
+    transition:
+
+        opacity 0.2s ease,
+
+        visibility 0.2s ease,
+
+        transform 0.2s ease;
+
+
+    z-index: 99999;
+
+}
+
+
+/* =========================================================
+   DROPDOWN MUNCUL SAAT HOVER
+========================================================= */
+
+.nav-dropdown:hover
+.nav-dropdown-menu {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    pointer-events: auto;
+
+
+    transform:
+        translateX(-50%)
+        translateY(0);
+
+}
+
+
+/* =========================================================
+   DROPDOWN ITEM
+========================================================= */
+
+.nav-dropdown-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+
+    width: 100%;
+
+
+    padding: 10px;
+
+
+    border-radius: 9px;
+
+
+    text-decoration: none;
+
+
+    transition:
+
+        background 0.2s ease,
+
+        transform 0.2s ease;
+
+}
+
+
+/* Hover item */
+
+.nav-dropdown-item:hover {
+
+    background: #f5f3ff;
+
+    transform:
+        translateX(3px);
+
+}
+
+
+/* =========================================================
+   NOMOR
+========================================================= */
+
+.item-number {
+
+    width: 30px;
+
+    height: 30px;
+
+
+    flex-shrink: 0;
+
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+
+    border-radius: 8px;
+
+
+    background: #ede9fe;
+
+
+    color: #7c3aed;
+
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================================
+   TEXT DROPDOWN
+========================================================= */
+
+.item-text {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+
+}
+
+
+.item-text strong {
+
+    display: block;
+
+
+    color: #1e293b;
+
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+.item-text small {
+
+    display: block;
+
+
+    color: #94a3b8;
+
+
+    font-size: 9px;
+
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+.dark .nav-dropdown-menu {
+
+    background: #1e1b2e;
+
+
+    border-color:
+        rgba(255, 255, 255, 0.08);
+
+
+    box-shadow:
+
+        0 15px 35px rgba(0, 0, 0, 0.4);
+
+}
+
+
+.dark .nav-dropdown-item:hover {
+
+    background:
+        rgba(124, 58, 237, 0.15);
+
+}
+
+
+.dark .item-text strong {
+
+    color: #f8fafc;
+
+}
+
+
+.dark .item-text small {
+
+    color: #94a3b8;
+
+}
+
+
+.dark .item-number {
+
+    background:
+        rgba(124, 58, 237, 0.2);
+
+    color: #c4b5fd;
+
+}
+
+
+/* =========================================================
+   MOBILE ARTEFAK
+========================================================= */
+
+.mobile-artifact-menu {
+
+    width: 100%;
+
+}
+
+
+.mobile-artifact-link {
+
+    display: block;
+
+}
+
+
+.mobile-artifact-submenu {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+
+
+    margin:
+
+        2px 0 6px 12px;
+
+
+    padding-left: 12px;
+
+
+    border-left:
+        2px solid #ede9fe;
+
+}
+
+
+.mobile-artifact-submenu a {
+
+    display: block;
+
+
+    padding: 7px 10px;
+
+
+    color: #64748b;
+
+
+    text-decoration: none;
+
+
+    font-size: 13px;
+
+
+    border-radius: 7px;
+
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+
+}
+
+
+.mobile-artifact-submenu a:hover {
+
+    background: #f5f3ff;
+
+    color: #7c3aed;
+
+}
+
+
+/* Dark mode mobile */
+
+.dark .mobile-artifact-submenu {
+
+    border-color:
+        rgba(124, 58, 237, 0.35);
+
+}
+
+
+.dark .mobile-artifact-submenu a {
+
+    color: #cbd5e1;
+
+}
+
+
+.dark .mobile-artifact-submenu a:hover {
+
+    background:
+        rgba(124, 58, 237, 0.15);
+
+    color: #c4b5fd;
+
+}

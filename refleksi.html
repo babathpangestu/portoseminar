@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Refleksi</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Poppins', 'sans-serif'] },
+                    colors: {
+                        primary: '#7c3aed',
+                        secondary: '#f97316',
+                        darkbg: '#120828',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-stone-50 text-stone-800 dark:bg-darkbg dark:text-stone-200 transition-colors duration-300">
+
+    <!-- Loader -->
+    <div id="loader" class="fixed inset-0 z-[100] bg-stone-50 dark:bg-darkbg flex items-center justify-center gap-3">
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+    </div>
+
+    <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Konten Utama -->
+    <main class="pt-32 pb-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Hero Quote -->
+            <div class="mb-20 text-center" data-aos="zoom-in">
+                <i class="fas fa-quote-right text-5xl text-primary/20 mb-6 inline-block"></i>
+                <h1 class="text-3xl md:text-5xl font-serif italic font-medium leading-tight mb-6">
+                    Di dunia yang berubah sangat cepat, kemampuan terpenting bukanlah menghafal informasi, melainkan kemampuan untuk terus belajar, beradaptasi, dan menciptakan makna.
+                </h1>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
+            </div>
+
+            <!-- Refleksi Akhir PPLT -->
+            <section class="glass feature-card p-8 md:p-12 mb-12" data-aos="fade-up">
+                <h2 class="text-2xl font-bold mb-6 pb-4 border-b border-violet-100 dark:border-violet-900/50 flex items-center gap-3">
+                    <span class="w-1.5 h-6 rounded-full bg-gradient-to-b from-primary to-secondary inline-block"></span>
+                    Refleksi Akhir PPLT
+                </h2>
+                <div class="space-y-6 text-stone-600 dark:text-stone-300 leading-relaxed">
+                    <div>
+                        <h4 class="font-bold text-stone-900 dark:text-white mb-2"><i class="fas fa-exclamation-circle text-secondary mr-2"></i>Tantangan yang Dihadapi</h4>
+                        <p>Selama pelaksanaan PPL, tantangan terbesar yang saya hadapi adalah mengelola kelas dan menjaga keterlibatan peserta didik agar tetap aktif selama proses pembelajaran berlangsung. Perbedaan karakter, tingkat pemahaman, dan fokus belajar siswa menjadi tantangan yang harus saya hadapi secara langsung.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-stone-900 dark:text-white mb-2"><i class="fas fa-tools text-primary mr-2"></i>Solusi & Tindakan</h4>
+                        <p>Solusi dan tindakan yang saya lakukan adalah mencoba menggunakan metode pembelajaran yang lebih interaktif, memberikan ice breaking, diskusi kelompok, serta memanfaatkan media pembelajaran digital agar suasana kelas menjadi lebih menarik dan kondusif. Selain itu, saya juga berusaha membangun komunikasi yang baik dengan peserta didik agar mereka lebih nyaman dan percaya diri dalam mengikuti pembelajaran.</p>
+                    </div>
+                    <div class="p-6 bg-primary/5 rounded-2xl border border-primary/10">
+                        <h4 class="font-bold text-primary mb-2">Pembelajaran Terbesar</h4>
+                        <p class="italic">"Pembelajaran terbesar yang saya peroleh dari kegiatan PPL adalah saya memahami bahwa menjadi seorang guru bukan hanya tentang menyampaikan materi, tetapi juga tentang kesabaran, kemampuan beradaptasi, komunikasi, serta bagaimana menciptakan pembelajaran yang bermakna dan menyenangkan bagi peserta didik."</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Filosofi & Model Guru -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <section class="glass feature-card p-8" data-aos="fade-right">
+                    <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+                        <i class="fas fa-seedling text-amber-500"></i> Filosofi Mengajar
+                    </h3>
+                    <p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
+                        Filosofi mengajar saya terinspirasi dari pemikiran Ki Hajar Dewantara yaitu “Ing Ngarsa Sung Tuladha, Ing Madya Mangun Karsa, Tut Wuri Handayani” yang berarti di depan memberi teladan, di tengah membangun semangat, dan di belakang memberikan dorongan. Sebagai calon guru, saya percaya bahwa seorang pendidik tidak hanya bertugas menyampaikan materi, tetapi juga menjadi pembimbing, motivator, dan teladan bagi peserta didik dalam proses belajar maupun kehidupan sehari-hari.
+                    </p>
+                </section>
+
+                <section class="glass feature-card p-8" data-aos="fade-left">
+                    <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+                        <i class="fas fa-star text-orange-500"></i> Model Guru yang Dituju
+                    </h3>
+                    <p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed mb-4">
+                        Model guru yang ingin saya capai adalah guru yang kreatif, inovatif, sabar, dan mampu menciptakan pembelajaran yang menyenangkan serta bermakna. Saya ingin menjadi guru yang dapat memanfaatkan teknologi dalam pembelajaran, membangun komunikasi yang baik dengan peserta didik, serta mampu membantu siswa berkembang sesuai potensi yang dimiliki.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-stone-100 dark:bg-stone-800 text-xs font-semibold rounded-full border border-stone-200 dark:border-stone-600">Profesionalisme</span>
+                        <span class="px-3 py-1 bg-stone-100 dark:bg-stone-800 text-xs font-semibold rounded-full border border-stone-200 dark:border-stone-600">Kreativitas Berpikir</span>
+                        <span class="px-3 py-1 bg-stone-100 dark:bg-stone-800 text-xs font-semibold rounded-full border border-stone-200 dark:border-stone-600">Kecerdasan Emosional</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Back to Top -->
+    <button id="backToTop"><i class="fas fa-arrow-up text-sm"></i></button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

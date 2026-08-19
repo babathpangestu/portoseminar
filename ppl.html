@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Artefak</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Poppins', 'sans-serif'] },
+                    colors: {
+                        primary: '#7c3aed',
+                        secondary: '#f97316',
+                        darkbg: '#120828',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-stone-50 text-stone-800 dark:bg-darkbg dark:text-stone-200 transition-colors duration-300">
+
+    <!-- Loader -->
+    <div id="loader" class="fixed inset-0 z-[100] bg-stone-50 dark:bg-darkbg flex items-center justify-center gap-3">
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+    </div>
+
+    <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Konten Utama -->
+    <main class="pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Header -->
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h1 class="text-4xl lg:text-5xl font-bold mb-4">Manajemen <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Artefak</span></h1>
+                <p class="text-stone-600 dark:text-stone-400 max-w-2xl mx-auto">Kumpulan dokumen, instrumen, dan hasil refleksi yang saya kembangkan selama pelaksanaan PPLT.</p>
+            </div>
+
+            <!-- Analisis Artefak -->
+            <section class="mb-20">
+                <h2 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                    <span class="w-1.5 h-7 rounded-full bg-gradient-to-b from-primary to-secondary inline-block"></span>
+                    <i class="fas fa-microscope text-primary"></i>
+                    Analisis Artefak Pembelajaran
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <!-- Card 1 -->
+                    <div class="glass feature-card p-6" data-aos="fade-up">
+                        <span class="px-3 py-1 bg-violet-100 dark:bg-violet-900/50 text-violet-700 dark:text-violet-300 rounded-full text-xs font-bold mb-4 inline-block">
+                            Modul Ajar Siklus 1
+                        </span>
+                        <h3 class="text-xl font-bold mb-2">Modul Ajar sorting</h3>
+                        <p class="text-sm text-stone-600 dark:text-stone-400 mb-5 text-justify">
+                            Modul ajar ini membahas topik Pengurutan (Sorting) Data pada Microsoft Excel untuk peserta didik kelas VIII SMP dalam mata pelajaran Informatika, elemen Analisis Data. Modul dirancang dengan alokasi waktu 3 JP (120 menit) menggunakan pendekatan Student Centered Learning berbasis Project Based Learning (PjBL).
+                            Materi mencakup tiga kompetensi utama, yaitu pengurutan 1 kolom, pengurutan 3 kolom, dan pengurutan berdasarkan hari. Proses pembelajaran dirancang secara kolaboratif melalui enam fase PjBL, mulai dari pertanyaan mendasar hingga evaluasi pengalaman. Asesmen dilakukan secara komprehensif melalui pretest, penilaian praktik proyek, dan posttest, dilengkapi dengan LKPD berisi data kontekstual penjualan, daftar nilai ujian, dan daftar pengiriman barang.
+                        </p>
+                        <div class="flex justify-center mb-5">
+                            <iframe src="https://drive.google.com/file/d/12O0g_9bM6FgUArjcbbr1zf2VsSGf-7ZY/preview"
+                                class="w-[180px] h-[240px] rounded-xl border shadow-md" allow="autoplay"></iframe>
+                        </div>
+                        <div class="p-4 bg-violet-50/60 dark:bg-violet-950/40 rounded-2xl border border-violet-100 dark:border-violet-800/50">
+                            <p class="text-xs font-semibold uppercase tracking-wide text-stone-500 mb-2">Hasil Refleksi</p>
+                            <p class="text-sm italic text-stone-600 dark:text-stone-400">
+                                "Penyusunan modul ajar ini memberikan pengalaman berharga dalam merancang pembelajaran Informatika yang tidak sekadar bersifat teknis, tetapi juga kontekstual dan bermakna bagi peserta didik.
+                                Hal-hal yang sudah berjalan baik: Pemilihan model PjBL dinilai sangat sesuai karena mendorong peserta didik untuk belajar melalui pengerjaan proyek nyata, sehingga keterampilan sorting tidak hanya dipahami secara teori tetapi langsung dipraktikkan. Penggunaan data kontekstual seperti data penjualan UD. Jaya Sentosa dan daftar nilai ujian membuat pembelajaran terasa relevan dengan kehidupan nyata. Selain itu, asesmen yang dirancang secara bertingkat, dari pretest hingga rubrik penilaian praktik, membantu saya memantau perkembangan belajar peserta didik secara menyeluruh."
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="glass feature-card p-6" data-aos="fade-up" data-aos-delay="100">
+                        <span class="px-3 py-1 bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300 rounded-full text-xs font-bold mb-4 inline-block">
+                            Modul Ajar Siklus 2
+                        </span>
+                        <h3 class="text-xl font-bold mb-2">Modul Ajar Filtering</h3>
+                        <p class="text-sm text-stone-600 dark:text-stone-400 mb-5 text-justify">
+                            Modul ajar yang saya susun membahas tentang materi Penyaringan (Filtering) Data pada aplikasi Microsoft Excel untuk peserta didik kelas VIII mata pelajaran Informatika. Modul ini dirancang menggunakan pendekatan Student Centered Learning dengan model Project Based Learning agar peserta didik dapat belajar secara aktif, kolaboratif, dan kontekstual dalam memahami pengolahan data menggunakan fitur filter pada Microsoft Excel. Materi pembelajaran difokuskan pada kemampuan peserta didik dalam menyaring data berdasarkan kriteria tertentu sehingga memudahkan proses analisis dan pengambilan informasi dari sebuah data.
+                            Dalam proses pembelajaran, peserta didik diajak untuk memecahkan masalah nyata melalui kegiatan proyek, diskusi kelompok, praktik langsung, hingga presentasi hasil kerja. Selain memahami konsep filtering, peserta didik juga dilatih untuk berpikir kritis, bekerja sama, berkomunikasi, serta mampu menghubungkan penggunaan Microsoft Excel dengan kebutuhan dalam kehidupan sehari-hari.
+                        </p>
+                        <div class="flex justify-center mb-5">
+                            <iframe src="https://drive.google.com/file/d/19wjsgdBCsgsEV3ytZksuYDzl0wEHnLXz/preview"
+                                class="w-[180px] h-[240px] rounded-xl border shadow-md" allow="autoplay"></iframe>
+                        </div>
+                        <div class="p-4 bg-violet-50/60 dark:bg-violet-950/40 rounded-2xl border border-violet-100 dark:border-violet-800/50">
+                            <p class="text-xs font-semibold uppercase tracking-wide text-stone-500 mb-2">Hasil Refleksi</p>
+                            <p class="text-sm italic text-stone-600 dark:text-stone-400">
+                                "Hasil refleksi dari penyusunan modul ajar ini memberikan pengalaman baru bagi saya dalam merancang pembelajaran yang lebih interaktif dan bermakna. Saya menyadari bahwa penggunaan model pembelajaran berbasis proyek dapat meningkatkan keterlibatan peserta didik dalam proses belajar. Selain itu, saya juga belajar bagaimana menyusun asesmen, pertanyaan pemantik, serta aktivitas pembelajaran yang mampu mendorong peserta didik untuk berpikir kritis dan aktif dalam menemukan solusi. Penyusunan modul ajar ini juga menjadi langkah penting bagi saya dalam mengembangkan kompetensi sebagai calon guru profesional yang mampu memanfaatkan teknologi dan menciptakan pembelajaran yang inovatif."
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="glass feature-card p-6" data-aos="fade-up" data-aos-delay="200">
+                        <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300 rounded-full text-xs font-bold mb-4 inline-block">
+                            Modul Ajar Siklus 3
+                        </span>
+                        <h3 class="text-xl font-bold mb-2">Modul Ajar Microsoft Excel</h3>
+                        <p class="text-sm text-stone-600 dark:text-stone-400 mb-5 text-justify">
+                            Modul ajar ini membahas topik Pengolahan Data pada Microsoft Excel untuk peserta didik kelas VIII SMP dalam mata pelajaran Informatika, elemen Analisis Data. Modul dirancang dengan alokasi waktu 3 JP (120 menit) menggunakan pendekatan Student Centered Learning berbasis Project Based Learning (PjBL).
+                            Proyek yang dirancang berfokus pada konteks yang dekat dengan kehidupan peserta didik, yaitu data Top 10 Lagu Indonesia di YouTube. Melalui proyek ini, peserta didik diajak untuk menerapkan empat keterampilan utama pengolahan data secara terintegrasi, meliputi pembuatan tabel data, sorting berdasarkan jumlah views, filtering data dengan kriteria views di atas 1 juta, serta menghitung rata-rata menggunakan fungsi =AVERAGE(), yang kemudian ditutup dengan pembuatan analisis dan kesimpulan. Asesmen dilakukan secara komprehensif melalui pretest, penilaian praktik proyek, dan posttest dengan soal berjenjang dari C1 hingga C6 yang mencakup kemampuan mengevaluasi dan mencipta.
+                        </p>
+                        <div class="flex justify-center mb-5">
+                            <iframe src="https://drive.google.com/file/d/1SfRUtrFaUFyM2a6dVvxlrl4WJskaEgjy/preview"
+                                class="w-[180px] h-[240px] rounded-xl border shadow-md" allow="autoplay"></iframe>
+                        </div>
+                        <div class="p-4 bg-violet-50/60 dark:bg-violet-950/40 rounded-2xl border border-violet-100 dark:border-violet-800/50">
+                            <p class="text-xs font-semibold uppercase tracking-wide text-stone-500 mb-2">Hasil Refleksi</p>
+                            <p class="text-sm italic text-stone-600 dark:text-stone-400">
+                                "Penyusunan modul ajar berbasis proyek ini menjadi pengalaman yang sangat bermakna dalam perjalanan saya sebagai calon guru Informatika.
+                                Hal-hal yang sudah berjalan baik: Pemilihan konteks data lagu YouTube sebagai bahan proyek merupakan keputusan pedagogis yang tepat. Topik ini relevan, menarik, dan dekat dengan keseharian peserta didik usia SMP, sehingga berpotensi tinggi membangun motivasi intrinsik dalam belajar. Pertanyaan pemantik yang dirancang pun terasa natural dan mengundang rasa ingin tahu, seperti "Jika memiliki data 10 lagu YouTube, bagaimana cara tercepat melihat lagu dengan views terbanyak?". Selain itu, integrasi empat keterampilan sekaligus (sorting, filtering, AVERAGE, dan analisis) dalam satu proyek membuat pembelajaran menjadi lebih holistik dan mencerminkan cara kerja nyata pengolahan data. Soal pretest dan posttest yang mencakup level kognitif hingga C6 juga menunjukkan keseriusan dalam merancang asesmen yang mengukur kemampuan berpikir tingkat tinggi (HOTS)."
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Penilaian Pamong -->
+            <section class="mb-20">
+                <h2 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                    <span class="w-1.5 h-7 rounded-full bg-gradient-to-b from-primary to-secondary inline-block"></span>
+                    <i class="fas fa-clipboard-check text-primary"></i>
+                    Penilaian Guru Pamong
+                </h2>
+
+                <div class="grid grid-cols-1 gap-6">
+
+                <!-- Lampiran 7 -->
+                <div class="glass feature-card p-6" data-aos="fade-up">
+                    <span class="px-3 py-1 bg-violet-100 dark:bg-violet-900/50 text-violet-700 dark:text-violet-300 rounded-full text-xs font-bold mb-4 inline-block">
+                        Lampiran 7
+                    </span>
+
+                    <h3 class="text-xl font-bold mb-4">
+                        Instrumen Penilaian Penyusunan Perangkat Pembelajaran
+                    </h3>
+
+                    <div class="grid grid-cols-3 gap-3">
+
+                        <iframe
+                            src="https://drive.google.com/file/d/19tDdgGBgxkZrRAPDUuYRe0rrB7P79Ltw/preview"
+                            class="w-full h-[220px] rounded-xl border shadow-md"
+                            allow="autoplay">
+                        </iframe>
+
+                        <iframe
+                            src="https://drive.google.com/file/d/1bAOWJyAOhoe534vrf8zoizvojnR8cygj/preview"
+                            class="w-full h-[220px] rounded-xl border shadow-md"
+                            allow="autoplay">
+                        </iframe>
+
+                        <iframe
+                            src="https://drive.google.com/file/d/1dP_QL76DjMoHnGJ9LP8uW70WNQYGoPz0/preview"
+                            class="w-full h-[220px] rounded-xl border shadow-md"
+                            allow="autoplay">
+                        </iframe>
+
+                    </div>
+                </div>
+
+                <!-- Lampiran 8 -->
+                <div class="glass feature-card p-6" data-aos="fade-up" data-aos-delay="100">
+                    <span class="px-3 py-1 bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300 rounded-full text-xs font-bold mb-4 inline-block">
+                        Lampiran 8
+                    </span>
+
+                    <h3 class="text-xl font-bold mb-4">
+                        Instrumen Penilaian Praktik Mengajar
+                    </h3>
+
+                    <div class="grid grid-cols-3 gap-3">
+
+                        <iframe
+                            src="https://drive.google.com/file/d/1fUxskHF7GmbZwXK2Uv3X8UGVBVvbCYJn/preview"
+                            class="w-full h-[220px] rounded-xl border shadow-md"
+                            allow="autoplay">
+                        </iframe>
+
+                        <iframe
+                            src="https://drive.google.com/file/d/1jQ44-qGlLjiLx_0iwZFytoGdqrLQKEHA/preview"
+                            class="w-full h-[220px] rounded-xl border shadow-md"
+                            allow="autoplay">
+                        </iframe>
+
+                        <iframe
+                            src="https://drive.google.com/file/d/1OctzW4oID95Ex3_9wXXCriB5Ts4lPuah/preview"
+                            class="w-full h-[220px] rounded-xl border shadow-md"
+                            allow="autoplay">
+                        </iframe>
+
+                    </div>
+                </div>
+
+            </div>
+
+            </section>
+
+           <!-- Galeri Kegiatan -->
+            <section class="mb-20" data-aos="fade-up">
+                <div class="bg-white dark:bg-violet-950/80 rounded-[30px] p-8 shadow-sm overflow-hidden border border-violet-100 dark:border-violet-900/50">
+                    <h2 class="text-3xl font-bold text-stone-900 dark:text-white mb-4">Dokumentasi Kegiatan</h2>
+                    <p class="text-stone-600 dark:text-stone-400 max-w-3xl leading-8 mb-10">Dokumentasi kegiatan PPL Terbimbing</p>
+
+                    <div class="slider relative overflow-hidden">
+                        <div class="absolute left-0 top-0 h-full w-24 z-10 bg-gradient-to-r from-white dark:from-violet-950/80 to-transparent"></div>
+                        <div class="absolute right-0 top-0 h-full w-24 z-10 bg-gradient-to-l from-white dark:from-violet-950/80 to-transparent"></div>
+
+                        <div class="slide-track flex gap-5">
+                            <div class="slide-track flex gap-5">
+                                <div class="gallery-card">
+                            <img src="https://drive.google.com/thumbnail?id=1w-oeOpU2koi08kzCmCxS7TUVaUI2mtGZ&sz=w1000">
+                        </div>
+
+                        <div class="gallery-card">
+                            <img src="https://drive.google.com/thumbnail?id=1kW1Mu915MrkcNusHU1m-leQU-Z7YN-hk&sz=w1000">
+                        </div>
+
+                        <div class="gallery-card">
+                            <img src="https://drive.google.com/thumbnail?id=1ZJABvXuZK3Sez6HTaUfajY2O2D4gfezX&sz=w1000">
+                        </div>
+
+                        <div class="gallery-card">
+                            <img src="https://drive.google.com/thumbnail?id=1qEd-8UQvNWhzeDWhwFQZ_pIQmWM1MQ_g&sz=w1000">
+                        </div>
+
+                        <div class="gallery-card">
+                            <img src="https://drive.google.com/thumbnail?id=1UkJ3i7qd7-oFdgqs2kVSqEk_GdakT7hp&sz=w1000">
+                        </div>
+
+                        <!-- Duplicate untuk efek carousel -->
+                        <div class="gallery-card">
+                            <img src="https://drive.google.com/thumbnail?id=1w-oeOpU2koi08kzCmCxS7TUVaUI2mtGZ&sz=w1000">
+                        </div>
+
+                        <div class="gallery-card">
+                            <img src="https://drive.google.com/thumbnail?id=1kW1Mu915MrkcNusHU1m-leQU-Z7YN-hk&sz=w1000">
+                        </div>
+
+                        <div class="gallery-card">
+                            <img src="https://drive.google.com/thumbnail?id=1ZJABvXuZK3Sez6HTaUfajY2O2D4gfezX&sz=w1000">
+                        </div>
+
+                        <div class="gallery-card">
+                            <img src="https://drive.google.com/thumbnail?id=1qEd-8UQvNWhzeDWhwFQZ_pIQmWM1MQ_g&sz=w1000">
+                        </div>
+
+                        <div class="gallery-card">
+                            <img src="https://drive.google.com/thumbnail?id=1UkJ3i7qd7-oFdgqs2kVSqEk_GdakT7hp&sz=w1000">
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Back to Top -->
+    <button id="backToTop"><i class="fas fa-arrow-up text-sm"></i></button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

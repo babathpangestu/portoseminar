@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portofolio | Artefak Mata Kuliah</title>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" 
+        rel="stylesheet"
+    >
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    >
+    <link 
+        href="https://unpkg.com/aos@2.3.1/dist/aos.css" 
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif']
+                    },
+
+                    colors: {
+                        primary: '#7c3aed',
+                        secondary: '#f97316',
+                        darkbg: '#120828',
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+
+<body class="bg-slate-50 text-slate-800 dark:bg-darkbg dark:text-slate-200 transition-colors duration-300">
+
+
+    <!-- ==========================================
+         LOADER
+    =========================================== -->
+    <div 
+        id="loader" 
+        class="fixed inset-0 z-[100] bg-white dark:bg-darkbg flex items-center justify-center gap-3"
+    >
+
+        <div 
+            class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-primary"
+        ></div>
+
+    </div>
+
+
+    <!-- ==========================================
+         NAVBAR
+    =========================================== -->
+    <div id="navbar-placeholder"></div>
+
+
+    <!-- ==========================================
+         KONTEN UTAMA
+    =========================================== -->
+    <main class="pt-32 pb-20">
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+
+            <!-- ==========================================
+                 HEADER / JUDUL
+            =========================================== -->
+            <div 
+                class="mb-16 text-center" 
+                data-aos="zoom-in"
+            >
+                <h3 
+                    class="text-3xl md:text-5xl font-bold leading-tight mb-6"
+                >
+                    Artefak Mata Kuliah Semester 1
+                </h3>
+
+            </div>
+
+
+
+            <!-- ==========================================
+                 TOMBOL FILE
+            =========================================== -->
+            <section 
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10"
+            >
+
+
+                <!-- ======================================
+                     FILE 1
+                ======================================= -->
+                <a
+                    href="ct.html"
+                    rel="noopener noreferrer"
+
+                    class="
+                        group
+                        glass
+                        p-5
+                        md:p-6
+                        rounded-3xl
+                        border
+                        border-slate-200
+                        dark:border-slate-700
+                        shadow-lg
+                        hover:shadow-2xl
+                        hover:-translate-y-2
+                        transition-all
+                        duration-300
+                        text-center
+                    "
+
+                    data-aos="fade-right"
+                >
+
+                    <div class="flex flex-col items-center">
+
+
+                        <!-- Icon File -->
+                        <div 
+                            class="
+                                w-16
+                                h-16
+                                mb-2
+                                rounded-3xl
+                                bg-primary/10
+                                flex
+                                items-center
+                                justify-center
+                                group-hover:bg-primary
+                                transition-all
+                                duration-300
+                            "
+                        >
+
+                            <i 
+                                class="
+                                    fas
+                                    fa-file-alt
+                                    text-3xl
+                                    text-primary
+                                    group-hover:text-white
+                                    transition-all
+                                    duration-300
+                                "
+                            ></i>
+
+                        </div>
+
+
+                        <!-- Judul File -->
+                        <h2 
+                            class="
+                                text-base
+                                md:text-lg
+                                font-bold
+                                text-slate-800
+                                dark:text-white
+                                mb-2
+                            "
+                        >
+                            Computational Thinking
+                        </h2>
+
+
+                        <!-- Deskripsi -->
+                        <p 
+                            class="
+                                text-slate-600
+                                dark:text-slate-400
+                                mb-4
+                                max-w-xs
+                                leading-relaxed
+                                text-xs
+                            "
+                        >
+                            Klik tombol di bawah untuk melihat atau membuka 
+                            dokumen Artefak Computational Thinking.
+                        </p>
+
+
+                        <!-- Tombol -->
+                        <span 
+                            class="
+                                inline-flex
+                                items-center
+                                gap-2
+                                px-4
+                                py-2
+                                bg-primary
+                                text-white
+                                rounded-xl
+                                text-xs
+                                font-semibold
+                                group-hover:bg-blue-700
+                                transition-colors
+                            "
+                        >
+
+                            <i class="fas fa-file"></i>
+
+                            Buka Artefak Computational Thinking
+
+                            <i class="fas fa-arrow-right"></i>
+
+                        </span>
+
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- ======================================
+                     FILE 2
+                ======================================= -->
+                <a
+                    href="fp.html"
+                    rel="noopener noreferrer"
+
+                    class="
+                        group
+                        glass
+                        p-5
+                        md:p-6
+                        rounded-3xl
+                        border
+                        border-slate-200
+                        dark:border-slate-700
+                        shadow-lg
+                        hover:shadow-2xl
+                        hover:-translate-y-2
+                        transition-all
+                        duration-300
+                        text-center
+                    "
+
+                    data-aos="fade-right"
+                >
+
+                    <div class="flex flex-col items-center">
+
+
+                        <!-- Icon File -->
+                        <div 
+                            class="
+                                w-16
+                                h-16
+                                mb-2
+                                rounded-3xl
+                                bg-primary/10
+                                flex
+                                items-center
+                                justify-center
+                                group-hover:bg-primary
+                                transition-all
+                                duration-300
+                            "
+                        >
+
+                            <i 
+                                class="
+                                    fas
+                                    fa-file-alt
+                                    text-3xl
+                                    text-primary
+                                    group-hover:text-white
+                                    transition-all
+                                    duration-300
+                                "
+                            ></i>
+
+                        </div>
+
+
+                        <!-- Judul File -->
+                        <h2 
+                            class="
+                                text-base
+                                md:text-lg
+                                font-bold
+                                text-slate-800
+                                dark:text-white
+                                mb-2
+                            "
+                        >
+                            Filosofi Pendidikan
+                        </h2>
+
+
+                        <!-- Deskripsi -->
+                        <p 
+                            class="
+                                text-slate-600
+                                dark:text-slate-400
+                                mb-4
+                                max-w-xs
+                                leading-relaxed
+                                text-xs
+                            "
+                        >
+                            Klik tombol di bawah untuk melihat atau membuka 
+                            dokumen Artefak Filosofi Pendidikan.
+                        </p>
+
+
+                        <!-- Tombol -->
+                        <span 
+                            class="
+                                inline-flex
+                                items-center
+                                gap-2
+                                px-4
+                                py-2
+                                bg-primary
+                                text-white
+                                rounded-xl
+                                text-xs
+                                font-semibold
+                                group-hover:bg-blue-700
+                                transition-colors
+                            "
+                        >
+
+                            <i class="fas fa-file"></i>
+
+                            Buka Artefak Filosofi Pendidikan
+
+                            <i class="fas fa-arrow-right"></i>
+
+                        </span>
+
+
+                    </div>
+
+                </a>
+
+                <!-- ======================================
+                     FILE 3
+                ======================================= -->
+                <a
+                    href="gm.html"
+                    rel="noopener noreferrer"
+
+                    class="
+                        group
+                        glass
+                        p-5
+                        md:p-6
+                        rounded-3xl
+                        border
+                        border-slate-200
+                        dark:border-slate-700
+                        shadow-lg
+                        hover:shadow-2xl
+                        hover:-translate-y-2
+                        transition-all
+                        duration-300
+                        text-center
+                    "
+
+                    data-aos="fade-right"
+                >
+
+                    <div class="flex flex-col items-center">
+
+
+                        <!-- Icon File -->
+                        <div 
+                            class="
+                                w-16
+                                h-16
+                                mb-2
+                                rounded-3xl
+                                bg-primary/10
+                                flex
+                                items-center
+                                justify-center
+                                group-hover:bg-primary
+                                transition-all
+                                duration-300
+                            "
+                        >
+
+                            <i 
+                                class="
+                                    fas
+                                    fa-file-alt
+                                    text-3xl
+                                    text-primary
+                                    group-hover:text-white
+                                    transition-all
+                                    duration-300
+                                "
+                            ></i>
+
+                        </div>
+
+
+                        <!-- Judul File -->
+                        <h2 
+                            class="
+                                text-base
+                                md:text-lg
+                                font-bold
+                                text-slate-800
+                                dark:text-white
+                                mb-2
+                            "
+                        >
+                            Growth Mindset
+                        </h2>
+
+
+                        <!-- Deskripsi -->
+                        <p 
+                            class="
+                                text-slate-600
+                                dark:text-slate-400
+                                mb-4
+                                max-w-xs
+                                leading-relaxed
+                                text-xs
+                            "
+                        >
+                            Klik tombol di bawah untuk melihat atau membuka 
+                            dokumen Artefak Growth Mindset.
+                        </p>
+
+
+                        <!-- Tombol -->
+                        <span 
+                            class="
+                                inline-flex
+                                items-center
+                                gap-2
+                                px-4
+                                py-2
+                                bg-primary
+                                text-white
+                                rounded-xl
+                                text-xs
+                                font-semibold
+                                group-hover:bg-blue-700
+                                transition-colors
+                            "
+                        >
+
+                            <i class="fas fa-file"></i>
+
+                            Buka Artefak Growth Mindset
+
+                            <i class="fas fa-arrow-right"></i>
+
+                        </span>
+
+
+                    </div>
+
+                </a>
+
+
+            </section>
+
+
+
+            <!-- ==========================================
+                 INFORMASI TAMBAHAN
+            =========================================== -->
+            <section 
+                class="
+                    glass
+                    p-6
+                    md:p-8
+                    rounded-2xl
+                    border
+                    border-slate-200
+                    dark:border-slate-700
+                    shadow-sm
+                "
+
+                data-aos="fade-up"
+            >
+
+                <div 
+                    class="
+                        flex
+                        flex-col
+                        md:flex-row
+                        items-center
+                        gap-4
+                        text-center
+                        md:text-left
+                    "
+                >
+
+                    <!-- Icon -->
+                    <div 
+                        class="
+                            w-14
+                            h-14
+                            flex-shrink-0
+                            rounded-xl
+                            bg-primary/10
+                            flex
+                            items-center
+                            justify-center
+                        "
+                    >
+
+                        <i 
+                            class="
+                                fas
+                                fa-info-circle
+                                text-2xl
+                                text-primary
+                            "
+                        ></i>
+
+                    </div>
+
+
+                    <!-- Text -->
+                    <div>
+
+                        <h3 
+                            class="
+                                font-bold
+                                text-slate-800
+                                dark:text-white
+                                mb-1
+                            "
+                        >
+                            Informasi Artefak
+                        </h3>
+
+                        <p 
+                            class="
+                                text-sm
+                                text-slate-600
+                                dark:text-slate-400
+                            "
+                        >
+                            Silakan klik salah satu kartu artefak untuk 
+                            membuka dokumen secara lengkap.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+    <div id="footer-placeholder"></div>
+
+
+
+    <!-- ==========================================
+         BACK TO TOP BUTTON
+    =========================================== -->
+    <button 
+        id="backToTop"
+
+        class="
+            fixed
+            bottom-8
+            right-8
+            bg-primary
+            hover:bg-blue-700
+            text-white
+            w-12
+            h-12
+            rounded-full
+            shadow-lg
+            flex
+            items-center
+            justify-center
+            transition-all
+            opacity-0
+            pointer-events-none
+            z-50
+            transform
+            translate-y-4
+        "
+    >
+
+        <i class="fas fa-arrow-up"></i>
+
+    </button>
+
+
+
+    <!-- ==========================================
+         AOS SCRIPT
+    =========================================== -->
+    <script 
+        src="https://unpkg.com/aos@2.3.1/dist/aos.js"
+    ></script>
+
+
+    <!-- ==========================================
+         CUSTOM SCRIPT
+    =========================================== -->
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

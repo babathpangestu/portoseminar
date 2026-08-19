@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Artefak</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Poppins', 'sans-serif'] },
+                    colors: {
+                        primary: '#7c3aed',
+                        secondary: '#f97316',
+                        darkbg: '#120828',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-stone-50 text-stone-800 dark:bg-darkbg dark:text-stone-200 transition-colors duration-300">
+
+    <!-- Loader -->
+    <div id="loader" class="fixed inset-0 z-[100] bg-stone-50 dark:bg-darkbg flex items-center justify-center gap-3">
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+    </div>
+
+    <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Konten Utama -->
+<main class="pt-32 pb-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Judul -->
+        <div class="text-center mb-14" data-aos="fade-down">
+            <i class="fas fa-folder-open text-5xl text-primary mb-5"></i>
+
+            <h1 class="text-4xl font-bold mb-4">
+                Kumpulan Dokumen Artefak
+            </h1>
+
+            <p class="text-stone-600 dark:text-stone-400 max-w-3xl mx-auto">
+                Berikut merupakan kumpulan dokumen hasil kegiatan selama
+                perkuliahan dan Praktik Pengalaman Lapangan (PPL).
+                Klik tombol <b>Buka Dokumen</b> apabila ingin melihat file
+                secara penuh.
+            </p>
+        </div>
+
+        <!-- Grid Dokumen -->
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+
+            <!-- CARD 1 -->
+            <div class="glass feature-card rounded-3xl overflow-hidden shadow-lg" data-aos="fade-up">
+
+                <iframe
+                    src="https://drive.google.com/file/d/1D3I5K5Qz3RSbyBGiR9GzvTOUUESkH1vT/preview"
+                    class="w-full h-72 border-0"
+                    allow="autoplay">
+                </iframe>
+
+                <div class="p-6">
+
+                    <h2 class="text-xl font-bold mb-2">
+                        LK 1
+                    </h2>
+
+                    <p class="text-sm text-stone-600 dark:text-stone-400 mb-5">
+                        Deskripsi singkat mengenai dokumen pertama.
+                    </p>
+
+                    <a href="https://drive.google.com/file/d/1D3I5K5Qz3RSbyBGiR9GzvTOUUESkH1vT/view"
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-primary text-white hover:opacity-90 transition">
+
+                        <i class="fas fa-file-pdf"></i>
+                        Buka Dokumen
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="glass feature-card rounded-3xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="100">
+
+                <iframe
+                    src="https://drive.google.com/file/d/1i_Ek5183HzHJkZWcuEvAh8WDH60goNwq/preview"
+                    class="w-full h-72 border-0"
+                    allow="autoplay">
+                </iframe>
+
+                <div class="p-6">
+
+                    <h2 class="text-xl font-bold mb-2">
+                        LK 1E
+                    </h2>
+
+                    <p class="text-sm text-stone-600 dark:text-stone-400 mb-5">
+                        Deskripsi singkat mengenai dokumen kedua.
+                    </p>
+
+                    <a href="https://drive.google.com/file/d/1i_Ek5183HzHJkZWcuEvAh8WDH60goNwq/view"
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-primary text-white hover:opacity-90 transition">
+
+                        <i class="fas fa-file-pdf"></i>
+                        Buka Dokumen
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="glass feature-card rounded-3xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="200">
+
+                <iframe
+                    src="https://drive.google.com/file/d/1SKwaWk4jVvvZyTR8g3-zpcVGLWGAMNjs/preview"
+                    class="w-full h-72 border-0"
+                    allow="autoplay">
+                </iframe>
+
+                <div class="p-6">
+
+                    <h2 class="text-xl font-bold mb-2">
+                        LK 6
+                    </h2>
+
+                    <p class="text-sm text-stone-600 dark:text-stone-400 mb-5">
+                        Deskripsi singkat mengenai dokumen ketiga.
+                    </p>
+
+                    <a href="https://drive.google.com/file/d/1SKwaWk4jVvvZyTR8g3-zpcVGLWGAMNjs/preview"
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-primary text-white hover:opacity-90 transition">
+
+                        <i class="fas fa-file-pdf"></i>
+                        Buka Dokumen
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="glass feature-card rounded-3xl overflow-hidden shadow-lg" data-aos="fade-up">
+
+                <iframe
+                    src="https://drive.google.com/file/d/1GCo3DjNXOo-Tak2RhoWAFbg6mJ1vs8aB/preview"
+                    class="w-full h-72 border-0"
+                    allow="autoplay">
+                </iframe>
+
+                <div class="p-6">
+
+                    <h2 class="text-xl font-bold mb-2">
+                        LK 7
+                    </h2>
+
+                    <p class="text-sm text-stone-600 dark:text-stone-400 mb-5">
+                        Deskripsi singkat mengenai dokumen keempat.
+                    </p>
+
+                    <a href="https://drive.google.com/file/d/1GCo3DjNXOo-Tak2RhoWAFbg6mJ1vs8aB/view"
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-primary text-white hover:opacity-90 transition">
+
+                        <i class="fas fa-file-pdf"></i>
+                        Buka Dokumen
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="glass feature-card rounded-3xl overflow-hidden shadow-lg" data-aos="fade-up">
+
+                <iframe
+                    src="https://drive.google.com/file/d/10FaLXtIPULVRujn3iwSkpbHQ12NsG-OB/preview"
+                    class="w-full h-72 border-0"
+                    allow="autoplay">
+                </iframe>
+
+                <div class="p-6">
+
+                    <h2 class="text-xl font-bold mb-2">
+                        LK 15
+                    </h2>
+
+                    <p class="text-sm text-stone-600 dark:text-stone-400 mb-5">
+                        Deskripsi singkat mengenai dokumen kelima.
+                    </p>
+
+                    <a href="https://drive.google.com/file/d/10FaLXtIPULVRujn3iwSkpbHQ12NsG-OB/view"
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-primary text-white hover:opacity-90 transition">
+
+                        <i class="fas fa-file-pdf"></i>
+                        Buka Dokumen
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="glass feature-card rounded-3xl overflow-hidden shadow-lg" data-aos="fade-up">
+
+                <iframe
+                    src="https://drive.google.com/file/d/1NPICKtcRbSpzzyR0yN0eRD9moz-L6a9A/preview"
+                    class="w-full h-72 border-0"
+                    allow="autoplay">
+                </iframe>
+
+                <div class="p-6">
+
+                    <h2 class="text-xl font-bold mb-2">
+                        LK 16
+                    </h2>
+
+                    <p class="text-sm text-stone-600 dark:text-stone-400 mb-5">
+                        Deskripsi singkat mengenai dokumen keenam.
+                    </p>
+
+                    <a href="https://drive.google.com/file/d/1NPICKtcRbSpzzyR0yN0eRD9moz-L6a9A/view"
+                       target="_blank"
+                       class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-primary text-white hover:opacity-90 transition">
+
+                        <i class="fas fa-file-pdf"></i>
+                        Buka Dokumen
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 7 -->
+            <div class="glass feature-card rounded-3xl overflow-hidden shadow-lg" data-aos="fade-up">
+
+                <iframe
+                    src="https://online.fliphtml5.com/Babatpangestu/vbgy/"
+                    class="w-full h-72 border-0"
+                    allowfullscreen>
+                </iframe>
+
+                <div class="p-6">
+
+                    <h2 class="text-xl font-bold mb-2">
+                        ARTEFAK CT
+                    </h2>
+
+                    <p class="text-sm text-stone-600 dark:text-stone-400 mb-5">
+                        Deskripsi singkat mengenai dokumen ketujuh.
+                    </p>
+
+                    <a href="https://online.fliphtml5.com/Babatpangestu/vbgy/"
+                    target="_blank"
+                    class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-primary text-white hover:opacity-90 transition">
+
+                        <i class="fas fa-book-open"></i>
+                        Buka Dokumen
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 8 -->
+            <div class="glass feature-card rounded-3xl overflow-hidden shadow-lg" data-aos="fade-up">
+
+                <iframe
+                    src="https://docs.google.com/document/d/1UyZxTfaJXQt5NcrJa20HGnlKhb-GPlw9/preview"
+                    class="w-full h-72 border-0"
+                    allowfullscreen>
+                </iframe>
+
+                <div class="p-6">
+
+                    <h2 class="text-xl font-bold mb-2">
+                        REFLEKSI CT
+                    </h2>
+
+                    <p class="text-sm text-stone-600 dark:text-stone-400 mb-5">
+                        Deskripsi singkat mengenai dokumen kedelapan.
+                    </p>
+
+                    <a href="https://docs.google.com/document/d/1UyZxTfaJXQt5NcrJa20HGnlKhb-GPlw9/edit?usp=sharing"
+                    target="_blank"
+                    class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-primary text-white hover:opacity-90 transition">
+
+                        <i class="fas fa-book-open"></i>
+                        Buka Dokumen
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Back to Top -->
+    <button id="backToTop"><i class="fas fa-arrow-up text-sm"></i></button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
